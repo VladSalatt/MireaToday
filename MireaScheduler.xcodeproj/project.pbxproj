@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4CCFA3055E4D2F7A2B46D920 /* Pods_MireaScheduler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D859DB15E954049558A767AE /* Pods_MireaScheduler.framework */; };
+		EA7397F52944BE16007AF5B9 /* AppRouter+Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7397F12944BE16007AF5B9 /* AppRouter+Main.swift */; };
+		EA7397F62944BE16007AF5B9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7397F22944BE16007AF5B9 /* MainViewController.swift */; };
+		EA7397F72944BE16007AF5B9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7397F32944BE16007AF5B9 /* MainView.swift */; };
+		EA7397F82944BE16007AF5B9 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7397F42944BE16007AF5B9 /* MainViewModel.swift */; };
 		EA920D622944BCE40049365C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA920D612944BCE40049365C /* AppDelegate.swift */; };
 		EA920D642944BCE40049365C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA920D632944BCE40049365C /* SceneDelegate.swift */; };
-		EA920D662944BCE40049365C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA920D652944BCE40049365C /* ViewController.swift */; };
 		EA920D692944BCE40049365C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA920D672944BCE40049365C /* Main.storyboard */; };
 		EA920D6B2944BCE50049365C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA920D6A2944BCE50049365C /* Assets.xcassets */; };
 		EA920D6E2944BCE50049365C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA920D6C2944BCE50049365C /* LaunchScreen.storyboard */; };
@@ -20,10 +23,13 @@
 		79EB88801FF2C7EBE8D38BF2 /* Pods-MireaScheduler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MireaScheduler.release.xcconfig"; path = "Target Support Files/Pods-MireaScheduler/Pods-MireaScheduler.release.xcconfig"; sourceTree = "<group>"; };
 		7B2C0C6CF17B7A7EC2D35933 /* Pods-MireaScheduler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MireaScheduler.debug.xcconfig"; path = "Target Support Files/Pods-MireaScheduler/Pods-MireaScheduler.debug.xcconfig"; sourceTree = "<group>"; };
 		D859DB15E954049558A767AE /* Pods_MireaScheduler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MireaScheduler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA7397F12944BE16007AF5B9 /* AppRouter+Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppRouter+Main.swift"; sourceTree = "<group>"; };
+		EA7397F22944BE16007AF5B9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EA7397F32944BE16007AF5B9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		EA7397F42944BE16007AF5B9 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		EA920D5E2944BCE40049365C /* MireaScheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MireaScheduler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA920D612944BCE40049365C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA920D632944BCE40049365C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA920D652944BCE40049365C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA920D682944BCE40049365C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA920D6A2944BCE50049365C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA920D6D2944BCE50049365C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,7 +54,6 @@
 				7B2C0C6CF17B7A7EC2D35933 /* Pods-MireaScheduler.debug.xcconfig */,
 				79EB88801FF2C7EBE8D38BF2 /* Pods-MireaScheduler.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -58,6 +63,25 @@
 				D859DB15E954049558A767AE /* Pods_MireaScheduler.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA7397EF2944BE04007AF5B9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EA7397F02944BE0B007AF5B9 /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EA7397F02944BE0B007AF5B9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EA7397F12944BE16007AF5B9 /* AppRouter+Main.swift */,
+				EA7397F22944BE16007AF5B9 /* MainViewController.swift */,
+				EA7397F32944BE16007AF5B9 /* MainView.swift */,
+				EA7397F42944BE16007AF5B9 /* MainViewModel.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		EA920D552944BCE40049365C = {
@@ -83,7 +107,7 @@
 			children = (
 				EA920D612944BCE40049365C /* AppDelegate.swift */,
 				EA920D632944BCE40049365C /* SceneDelegate.swift */,
-				EA920D652944BCE40049365C /* ViewController.swift */,
+				EA7397EF2944BE04007AF5B9 /* Scenes */,
 				EA920D672944BCE40049365C /* Main.storyboard */,
 				EA920D6A2944BCE50049365C /* Assets.xcassets */,
 				EA920D6C2944BCE50049365C /* LaunchScreen.storyboard */,
@@ -207,9 +231,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA920D662944BCE40049365C /* ViewController.swift in Sources */,
+				EA7397F82944BE16007AF5B9 /* MainViewModel.swift in Sources */,
+				EA7397F72944BE16007AF5B9 /* MainView.swift in Sources */,
+				EA7397F52944BE16007AF5B9 /* AppRouter+Main.swift in Sources */,
 				EA920D622944BCE40049365C /* AppDelegate.swift in Sources */,
 				EA920D642944BCE40049365C /* SceneDelegate.swift in Sources */,
+				EA7397F62944BE16007AF5B9 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

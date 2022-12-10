@@ -5,6 +5,52 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>5BE90CE1-5A46-4AD5-A728-38DDC94ABF18</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>53823D9D-BC6A-45EB-B403-4DEE64309933</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MireaScheduler-2022.12.10_16-15-07-+0300.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MireaScheduler project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MireaScheduler</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MireaScheduler</string>
+			<key>timeStartedRecording</key>
+			<real>692370907.27150702</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MireaScheduler</string>
+			<key>uniqueIdentifier</key>
+			<string>5BE90CE1-5A46-4AD5-A728-38DDC94ABF18</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

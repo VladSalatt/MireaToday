@@ -5,6 +5,75 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>53823D9D-BC6A-45EB-B403-4DEE64309933</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>53823D9D-BC6A-45EB-B403-4DEE64309933.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MireaScheduler project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MireaScheduler</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MireaScheduler</string>
+			<key>timeStartedRecording</key>
+			<real>692370907.27180696</real>
+			<key>timeStoppedRecording</key>
+			<real>692370907.95012295</real>
+			<key>title</key>
+			<string>Build MireaScheduler</string>
+			<key>uniqueIdentifier</key>
+			<string>53823D9D-BC6A-45EB-B403-4DEE64309933</string>
+		</dict>
+		<key>94FF172D-6639-44B9-B070-1C1F060A30CC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>94FF172D-6639-44B9-B070-1C1F060A30CC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MireaScheduler project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MireaScheduler</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MireaScheduler</string>
+			<key>timeStartedRecording</key>
+			<real>692370887.99451101</real>
+			<key>timeStoppedRecording</key>
+			<real>692370897.85383105</real>
+			<key>title</key>
+			<string>Build MireaScheduler</string>
+			<key>uniqueIdentifier</key>
+			<string>94FF172D-6639-44B9-B070-1C1F060A30CC</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
