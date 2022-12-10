@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CCFA3055E4D2F7A2B46D920 /* Pods_MireaScheduler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D859DB15E954049558A767AE /* Pods_MireaScheduler.framework */; };
 		EA920D622944BCE40049365C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA920D612944BCE40049365C /* AppDelegate.swift */; };
 		EA920D642944BCE40049365C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA920D632944BCE40049365C /* SceneDelegate.swift */; };
 		EA920D662944BCE40049365C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA920D652944BCE40049365C /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79EB88801FF2C7EBE8D38BF2 /* Pods-MireaScheduler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MireaScheduler.release.xcconfig"; path = "Target Support Files/Pods-MireaScheduler/Pods-MireaScheduler.release.xcconfig"; sourceTree = "<group>"; };
+		7B2C0C6CF17B7A7EC2D35933 /* Pods-MireaScheduler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MireaScheduler.debug.xcconfig"; path = "Target Support Files/Pods-MireaScheduler/Pods-MireaScheduler.debug.xcconfig"; sourceTree = "<group>"; };
+		D859DB15E954049558A767AE /* Pods_MireaScheduler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MireaScheduler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA920D5E2944BCE40049365C /* MireaScheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MireaScheduler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA920D612944BCE40049365C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA920D632944BCE40049365C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CCFA3055E4D2F7A2B46D920 /* Pods_MireaScheduler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94783FDAA90DABE315AC4F85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B2C0C6CF17B7A7EC2D35933 /* Pods-MireaScheduler.debug.xcconfig */,
+				79EB88801FF2C7EBE8D38BF2 /* Pods-MireaScheduler.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		973474574EC8E11397FF5A78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D859DB15E954049558A767AE /* Pods_MireaScheduler.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EA920D552944BCE40049365C = {
 			isa = PBXGroup;
 			children = (
 				EA920D602944BCE40049365C /* MireaScheduler */,
 				EA920D5F2944BCE40049365C /* Products */,
+				94783FDAA90DABE315AC4F85 /* Pods */,
+				973474574EC8E11397FF5A78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA920D722944BCE50049365C /* Build configuration list for PBXNativeTarget "MireaScheduler" */;
 			buildPhases = (
+				FBA72252D00149F3BC20D033 /* [CP] Check Pods Manifest.lock */,
 				EA920D5A2944BCE40049365C /* Sources */,
 				EA920D5B2944BCE40049365C /* Frameworks */,
 				EA920D5C2944BCE40049365C /* Resources */,
+				4880285C230631924EC657C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4880285C230631924EC657C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MireaScheduler/Pods-MireaScheduler-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MireaScheduler/Pods-MireaScheduler-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MireaScheduler/Pods-MireaScheduler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBA72252D00149F3BC20D033 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MireaScheduler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA920D5A2944BCE40049365C /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		EA920D732944BCE50049365C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B2C0C6CF17B7A7EC2D35933 /* Pods-MireaScheduler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		EA920D742944BCE50049365C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79EB88801FF2C7EBE8D38BF2 /* Pods-MireaScheduler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
