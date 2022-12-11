@@ -6,6 +6,210 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>30ECFD9F-C815-40D9-8DD7-0752EDB758B3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>30ECFD9F-C815-40D9-8DD7-0752EDB758B3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MireaScheduler project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MireaScheduler</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MireaScheduler</string>
+			<key>timeStartedRecording</key>
+			<real>692456914.97576499</real>
+			<key>timeStoppedRecording</key>
+			<real>692456921.28520799</real>
+			<key>title</key>
+			<string>Build MireaScheduler</string>
+			<key>uniqueIdentifier</key>
+			<string>30ECFD9F-C815-40D9-8DD7-0752EDB758B3</string>
+		</dict>
+		<key>40ADCDA7-AC7C-4104-AF2B-E7E61F6AAC97</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>40ADCDA7-AC7C-4104-AF2B-E7E61F6AAC97.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MireaScheduler project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MireaScheduler</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MireaScheduler</string>
+			<key>timeStartedRecording</key>
+			<real>692457010.89713895</real>
+			<key>timeStoppedRecording</key>
+			<real>692457012.25531006</real>
+			<key>title</key>
+			<string>Build MireaScheduler</string>
+			<key>uniqueIdentifier</key>
+			<string>40ADCDA7-AC7C-4104-AF2B-E7E61F6AAC97</string>
+		</dict>
+		<key>442DB135-FE93-4FE3-A4AF-C8195A973900</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>442DB135-FE93-4FE3-A4AF-C8195A973900.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MireaScheduler project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MireaScheduler</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Clean MireaScheduler</string>
+			<key>timeStartedRecording</key>
+			<real>692456892.46574104</real>
+			<key>timeStoppedRecording</key>
+			<real>692456892.50905597</real>
+			<key>title</key>
+			<string>Clean MireaScheduler</string>
+			<key>uniqueIdentifier</key>
+			<string>442DB135-FE93-4FE3-A4AF-C8195A973900</string>
+		</dict>
+		<key>46ADEC6C-4FBF-4E03-8DAB-E0198B779306</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>46ADEC6C-4FBF-4E03-8DAB-E0198B779306.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MireaScheduler project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MireaScheduler</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MireaScheduler</string>
+			<key>timeStartedRecording</key>
+			<real>692457027.728966</real>
+			<key>timeStoppedRecording</key>
+			<real>692457028.41793597</real>
+			<key>title</key>
+			<string>Build MireaScheduler</string>
+			<key>uniqueIdentifier</key>
+			<string>46ADEC6C-4FBF-4E03-8DAB-E0198B779306</string>
+		</dict>
+		<key>486C153F-A684-4923-BCE9-1B32BECDE7C6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>486C153F-A684-4923-BCE9-1B32BECDE7C6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MireaScheduler project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MireaScheduler</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MireaScheduler</string>
+			<key>timeStartedRecording</key>
+			<real>692456069.32240403</real>
+			<key>timeStoppedRecording</key>
+			<real>692456070.410887</real>
+			<key>title</key>
+			<string>Build MireaScheduler</string>
+			<key>uniqueIdentifier</key>
+			<string>486C153F-A684-4923-BCE9-1B32BECDE7C6</string>
+		</dict>
+		<key>48E1FD19-1B57-49D6-92AC-F239615D74DE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>48E1FD19-1B57-49D6-92AC-F239615D74DE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MireaScheduler project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MireaScheduler</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MireaScheduler</string>
+			<key>timeStartedRecording</key>
+			<real>692455920.97543299</real>
+			<key>timeStoppedRecording</key>
+			<real>692455922.47746801</real>
+			<key>title</key>
+			<string>Build MireaScheduler</string>
+			<key>uniqueIdentifier</key>
+			<string>48E1FD19-1B57-49D6-92AC-F239615D74DE</string>
+		</dict>
 		<key>53823D9D-BC6A-45EB-B403-4DEE64309933</key>
 		<dict>
 			<key>className</key>
@@ -40,7 +244,7 @@
 			<key>uniqueIdentifier</key>
 			<string>53823D9D-BC6A-45EB-B403-4DEE64309933</string>
 		</dict>
-		<key>94FF172D-6639-44B9-B070-1C1F060A30CC</key>
+		<key>59DB9EA5-E69A-4A18-A5E5-11A3519866C6</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -49,7 +253,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>94FF172D-6639-44B9-B070-1C1F060A30CC.xcactivitylog</string>
+			<string>59DB9EA5-E69A-4A18-A5E5-11A3519866C6.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -66,13 +270,115 @@
 			<key>signature</key>
 			<string>Build MireaScheduler</string>
 			<key>timeStartedRecording</key>
-			<real>692370887.99451101</real>
+			<real>692456088.88507199</real>
 			<key>timeStoppedRecording</key>
-			<real>692370897.85383105</real>
+			<real>692456089.69267499</real>
 			<key>title</key>
 			<string>Build MireaScheduler</string>
 			<key>uniqueIdentifier</key>
-			<string>94FF172D-6639-44B9-B070-1C1F060A30CC</string>
+			<string>59DB9EA5-E69A-4A18-A5E5-11A3519866C6</string>
+		</dict>
+		<key>81DC93CE-85DD-4D2B-9DD2-130870FB1082</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>81DC93CE-85DD-4D2B-9DD2-130870FB1082.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MireaScheduler project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MireaScheduler</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MireaScheduler</string>
+			<key>timeStartedRecording</key>
+			<real>692456078.26003206</real>
+			<key>timeStoppedRecording</key>
+			<real>692456078.56968296</real>
+			<key>title</key>
+			<string>Build MireaScheduler</string>
+			<key>uniqueIdentifier</key>
+			<string>81DC93CE-85DD-4D2B-9DD2-130870FB1082</string>
+		</dict>
+		<key>ADBCB1D9-385C-4E37-B90B-581B4BD2B197</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>ADBCB1D9-385C-4E37-B90B-581B4BD2B197.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MireaScheduler project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MireaScheduler</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Clean MireaScheduler</string>
+			<key>timeStartedRecording</key>
+			<real>692456649.53776896</real>
+			<key>timeStoppedRecording</key>
+			<real>692456649.75099301</real>
+			<key>title</key>
+			<string>Clean MireaScheduler</string>
+			<key>uniqueIdentifier</key>
+			<string>ADBCB1D9-385C-4E37-B90B-581B4BD2B197</string>
+		</dict>
+		<key>EA0C44CD-5026-4B54-B9E6-0AC1D6198932</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>EA0C44CD-5026-4B54-B9E6-0AC1D6198932.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MireaScheduler project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MireaScheduler</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MireaScheduler</string>
+			<key>timeStartedRecording</key>
+			<real>692457115.53725505</real>
+			<key>timeStoppedRecording</key>
+			<real>692457117.03870404</real>
+			<key>title</key>
+			<string>Build MireaScheduler</string>
+			<key>uniqueIdentifier</key>
+			<string>EA0C44CD-5026-4B54-B9E6-0AC1D6198932</string>
 		</dict>
 	</dict>
 </dict>

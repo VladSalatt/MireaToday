@@ -10,6 +10,7 @@ final class MainView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
 
+        backgroundColor = .green
         makeConstraints()
         setupBindings()
     }

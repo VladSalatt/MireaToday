@@ -8,7 +8,6 @@ extension AppRouter {
             // here
         } catch {
             assertionFailure(error.localizedDescription)
-            TopAlertManager.shared.showError(error)
         }
     }
 }
