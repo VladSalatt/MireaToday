@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4CCFA3055E4D2F7A2B46D920 /* Pods_MireaScheduler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D859DB15E954049558A767AE /* Pods_MireaScheduler.framework */; };
+		EA323E702948B8000076F995 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA323E6F2948B8000076F995 /* MainCollectionViewCell.swift */; };
 		EA5B39B6294609C80045E352 /* Rx+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5B39B5294609C80045E352 /* Rx+Ext.swift */; };
 		EA5B39B829460A4E0045E352 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5B39B729460A4E0045E352 /* UIColor+Ext.swift */; };
 		EA5B39BA29460A810045E352 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5B39B929460A810045E352 /* UILabel+Ext.swift */; };
 		EA5B39C129460CC20045E352 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA5B39BF29460CC20045E352 /* Localizable.strings */; };
 		EA5B39C429460CFD0045E352 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5B39C229460CFD0045E352 /* Strings+Generated.swift */; };
 		EA5B39C529460CFD0045E352 /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5B39C329460CFD0045E352 /* Assets+Generated.swift */; };
+		EA5ED51229475407009E1EA5 /* GroupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5ED51129475407009E1EA5 /* GroupService.swift */; };
 		EA7397F52944BE16007AF5B9 /* AppRouter+Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7397F12944BE16007AF5B9 /* AppRouter+Main.swift */; };
 		EA7397F62944BE16007AF5B9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7397F22944BE16007AF5B9 /* MainViewController.swift */; };
 		EA7397F72944BE16007AF5B9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7397F32944BE16007AF5B9 /* MainView.swift */; };
@@ -28,12 +30,14 @@
 		79EB88801FF2C7EBE8D38BF2 /* Pods-MireaScheduler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MireaScheduler.release.xcconfig"; path = "Target Support Files/Pods-MireaScheduler/Pods-MireaScheduler.release.xcconfig"; sourceTree = "<group>"; };
 		7B2C0C6CF17B7A7EC2D35933 /* Pods-MireaScheduler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MireaScheduler.debug.xcconfig"; path = "Target Support Files/Pods-MireaScheduler/Pods-MireaScheduler.debug.xcconfig"; sourceTree = "<group>"; };
 		D859DB15E954049558A767AE /* Pods_MireaScheduler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MireaScheduler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA323E6F2948B8000076F995 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		EA5B39B5294609C80045E352 /* Rx+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx+Ext.swift"; sourceTree = "<group>"; };
 		EA5B39B729460A4E0045E352 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		EA5B39B929460A810045E352 /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
 		EA5B39C029460CC20045E352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EA5B39C229460CFD0045E352 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 		EA5B39C329460CFD0045E352 /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = "<group>"; };
+		EA5ED51129475407009E1EA5 /* GroupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupService.swift; sourceTree = "<group>"; };
 		EA7397F12944BE16007AF5B9 /* AppRouter+Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppRouter+Main.swift"; sourceTree = "<group>"; };
 		EA7397F22944BE16007AF5B9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EA7397F32944BE16007AF5B9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EA323E6E2948B7E90076F995 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA323E6F2948B8000076F995 /* MainCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		EA5B39B4294609BB0045E352 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +118,14 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		EA5ED510294753C0009E1EA5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EA5ED51129475407009E1EA5 /* GroupService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		EA7397EF2944BE04007AF5B9 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +137,7 @@
 		EA7397F02944BE0B007AF5B9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EA323E6E2948B7E90076F995 /* Views */,
 				EA7397F12944BE16007AF5B9 /* AppRouter+Main.swift */,
 				EA7397F22944BE16007AF5B9 /* MainViewController.swift */,
 				EA7397F32944BE16007AF5B9 /* MainView.swift */,
@@ -146,6 +167,7 @@
 		EA920D602944BCE40049365C /* MireaScheduler */ = {
 			isa = PBXGroup;
 			children = (
+				EA5ED510294753C0009E1EA5 /* Network */,
 				EA5B39BB29460AD80045E352 /* Resources */,
 				EA5B39B4294609BB0045E352 /* Helpers */,
 				EA7397EF2944BE04007AF5B9 /* Scenes */,
@@ -295,8 +317,10 @@
 				EA5B39BA29460A810045E352 /* UILabel+Ext.swift in Sources */,
 				EA5B39C529460CFD0045E352 /* Assets+Generated.swift in Sources */,
 				EA7397F82944BE16007AF5B9 /* MainViewModel.swift in Sources */,
+				EA323E702948B8000076F995 /* MainCollectionViewCell.swift in Sources */,
 				EA7397F72944BE16007AF5B9 /* MainView.swift in Sources */,
 				EA7397F52944BE16007AF5B9 /* AppRouter+Main.swift in Sources */,
+				EA5ED51229475407009E1EA5 /* GroupService.swift in Sources */,
 				EA920D622944BCE40049365C /* AppDelegate.swift in Sources */,
 				EA5B39B829460A4E0045E352 /* UIColor+Ext.swift in Sources */,
 				EA920D642944BCE40049365C /* SceneDelegate.swift in Sources */,
