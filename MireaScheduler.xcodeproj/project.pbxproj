@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4CCFA3055E4D2F7A2B46D920 /* Pods_MireaScheduler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D859DB15E954049558A767AE /* Pods_MireaScheduler.framework */; };
 		EA323E702948B8000076F995 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA323E6F2948B8000076F995 /* MainCollectionViewCell.swift */; };
+		EA323E722948F7D70076F995 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA323E712948F7D70076F995 /* UIView+Ext.swift */; };
+		EA323E742948F8B90076F995 /* UIStackView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA323E732948F8B90076F995 /* UIStackView+Ext.swift */; };
+		EA323E77294904B00076F995 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA323E76294904B00076F995 /* Schedule.swift */; };
 		EA5B39B6294609C80045E352 /* Rx+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5B39B5294609C80045E352 /* Rx+Ext.swift */; };
 		EA5B39B829460A4E0045E352 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5B39B729460A4E0045E352 /* UIColor+Ext.swift */; };
 		EA5B39BA29460A810045E352 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5B39B929460A810045E352 /* UILabel+Ext.swift */; };
@@ -24,6 +27,9 @@
 		EA920D642944BCE40049365C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA920D632944BCE40049365C /* SceneDelegate.swift */; };
 		EA920D6B2944BCE50049365C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA920D6A2944BCE50049365C /* Assets.xcassets */; };
 		EA920D6E2944BCE50049365C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA920D6C2944BCE50049365C /* LaunchScreen.storyboard */; };
+		EAD5599A294918B0004A0A05 /* MainCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD55999294918B0004A0A05 /* MainCollectionHeaderView.swift */; };
+		EAD5599C29491B63004A0A05 /* UICollection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5599B29491B63004A0A05 /* UICollection+Ext.swift */; };
+		EAD5599E294921C6004A0A05 /* GenericCollectoinReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5599D294921C6004A0A05 /* GenericCollectoinReusableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +37,9 @@
 		7B2C0C6CF17B7A7EC2D35933 /* Pods-MireaScheduler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MireaScheduler.debug.xcconfig"; path = "Target Support Files/Pods-MireaScheduler/Pods-MireaScheduler.debug.xcconfig"; sourceTree = "<group>"; };
 		D859DB15E954049558A767AE /* Pods_MireaScheduler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MireaScheduler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA323E6F2948B8000076F995 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA323E712948F7D70076F995 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		EA323E732948F8B90076F995 /* UIStackView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Ext.swift"; sourceTree = "<group>"; };
+		EA323E76294904B00076F995 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		EA5B39B5294609C80045E352 /* Rx+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx+Ext.swift"; sourceTree = "<group>"; };
 		EA5B39B729460A4E0045E352 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		EA5B39B929460A810045E352 /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
@@ -48,6 +57,9 @@
 		EA920D6A2944BCE50049365C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA920D6D2944BCE50049365C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA920D6F2944BCE50049365C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAD55999294918B0004A0A05 /* MainCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionHeaderView.swift; sourceTree = "<group>"; };
+		EAD5599B29491B63004A0A05 /* UICollection+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollection+Ext.swift"; sourceTree = "<group>"; };
+		EAD5599D294921C6004A0A05 /* GenericCollectoinReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCollectoinReusableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +95,17 @@
 			isa = PBXGroup;
 			children = (
 				EA323E6F2948B8000076F995 /* MainCollectionViewCell.swift */,
+				EAD55999294918B0004A0A05 /* MainCollectionHeaderView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		EA323E752949048F0076F995 /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				EA323E76294904B00076F995 /* Schedule.swift */,
+			);
+			path = Domains;
 			sourceTree = "<group>";
 		};
 		EA5B39B4294609BB0045E352 /* Helpers */ = {
@@ -93,6 +114,10 @@
 				EA5B39B5294609C80045E352 /* Rx+Ext.swift */,
 				EA5B39B729460A4E0045E352 /* UIColor+Ext.swift */,
 				EA5B39B929460A810045E352 /* UILabel+Ext.swift */,
+				EA323E712948F7D70076F995 /* UIView+Ext.swift */,
+				EA323E732948F8B90076F995 /* UIStackView+Ext.swift */,
+				EAD5599B29491B63004A0A05 /* UICollection+Ext.swift */,
+				EAD5599D294921C6004A0A05 /* GenericCollectoinReusableCell.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -167,6 +192,7 @@
 		EA920D602944BCE40049365C /* MireaScheduler */ = {
 			isa = PBXGroup;
 			children = (
+				EA323E752949048F0076F995 /* Domains */,
 				EA5ED510294753C0009E1EA5 /* Network */,
 				EA5B39BB29460AD80045E352 /* Resources */,
 				EA5B39B4294609BB0045E352 /* Helpers */,
@@ -316,11 +342,17 @@
 				EA5B39B6294609C80045E352 /* Rx+Ext.swift in Sources */,
 				EA5B39BA29460A810045E352 /* UILabel+Ext.swift in Sources */,
 				EA5B39C529460CFD0045E352 /* Assets+Generated.swift in Sources */,
+				EA323E722948F7D70076F995 /* UIView+Ext.swift in Sources */,
 				EA7397F82944BE16007AF5B9 /* MainViewModel.swift in Sources */,
+				EA323E77294904B00076F995 /* Schedule.swift in Sources */,
+				EA323E742948F8B90076F995 /* UIStackView+Ext.swift in Sources */,
 				EA323E702948B8000076F995 /* MainCollectionViewCell.swift in Sources */,
+				EAD5599E294921C6004A0A05 /* GenericCollectoinReusableCell.swift in Sources */,
+				EAD5599C29491B63004A0A05 /* UICollection+Ext.swift in Sources */,
 				EA7397F72944BE16007AF5B9 /* MainView.swift in Sources */,
 				EA7397F52944BE16007AF5B9 /* AppRouter+Main.swift in Sources */,
 				EA5ED51229475407009E1EA5 /* GroupService.swift in Sources */,
+				EAD5599A294918B0004A0A05 /* MainCollectionHeaderView.swift in Sources */,
 				EA920D622944BCE40049365C /* AppDelegate.swift in Sources */,
 				EA5B39B829460A4E0045E352 /* UIColor+Ext.swift in Sources */,
 				EA920D642944BCE40049365C /* SceneDelegate.swift in Sources */,

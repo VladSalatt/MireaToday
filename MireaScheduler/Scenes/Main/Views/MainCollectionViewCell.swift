@@ -30,21 +30,18 @@ final class MainCollectionViewCell: UICollectionViewCell {
     
     private lazy var horizontalTopInsetedView: UIView = {
         let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .systemGray
         return view
     }()
     
     private lazy var numberOfPairLabel: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .italicSystemFont(ofSize: 14)
         return label
     }()
     
     private lazy var teacherLabel: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .italicSystemFont(ofSize: 14)
         label.textAlignment = .center
         return label
@@ -52,7 +49,6 @@ final class MainCollectionViewCell: UICollectionViewCell {
     
     private lazy var typeOfPairLabel: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .italicSystemFont(ofSize: 14)
         label.textAlignment = .right
         return label
@@ -62,7 +58,6 @@ final class MainCollectionViewCell: UICollectionViewCell {
     
     private lazy var horizontalCenterInsetedView: UIView = {
         let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .green
         return view
     }()
@@ -76,7 +71,6 @@ final class MainCollectionViewCell: UICollectionViewCell {
     
     private lazy var timeLabel: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 16)
         label.textAlignment = .left
         label.numberOfLines = 0
@@ -85,7 +79,6 @@ final class MainCollectionViewCell: UICollectionViewCell {
     
     private lazy var pairNameLabel: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 16)
         label.textAlignment = .center
         label.numberOfLines = 0
@@ -94,41 +87,51 @@ final class MainCollectionViewCell: UICollectionViewCell {
     
     private lazy var cabinaLabel: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 16)
         label.textAlignment = .right
+        label.numberOfLines = 0
         return label
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        layer.borderWidth = 1
-        layer.borderColor = UIColor.black.cgColor
         layer.cornerRadius = 8
         clipsToBounds = true
-        translatesAutoresizingMaskIntoConstraints = false
         
-        addSubview(contentStackView)
-        contentStackView.addArrangedSubview(horizontalTopInsetedView)
-        contentStackView.addArrangedSubview(horizontalCenterInsetedView)
+        addSubviews(
+            contentStackView.addArrangedSubviews(
+                horizontalTopInsetedView.addSubviews(
+                    horizontalTopStackView.addArrangedSubviews(
+                        numberOfPairLabel,
+                        teacherLabel,
+                        typeOfPairLabel
+                    )
+                ),
+                horizontalCenterInsetedView.addSubviews(
+                    horizontalCenterStackView.addArrangedSubviews(
+                        timeLabel,
+                        pairNameLabel,
+                        cabinaLabel
+                    )
+                )
+            )
+        )
         
-        horizontalTopInsetedView.addSubview(horizontalTopStackView)
-        horizontalCenterInsetedView.addSubview(horizontalCenterStackView)
-        
-        horizontalTopStackView.addArrangedSubview(numberOfPairLabel)
-        horizontalTopStackView.addArrangedSubview(teacherLabel)
-        horizontalTopStackView.addArrangedSubview(typeOfPairLabel)
-        
-        horizontalCenterStackView.addArrangedSubview(timeLabel)
-        horizontalCenterStackView.addArrangedSubview(pairNameLabel)
-        horizontalCenterStackView.addArrangedSubview(cabinaLabel)
         
         makeConstraints()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    // Эта херня отвечает за динамическую высоту ячейки и распределению ее по всей длине экрана
+    override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
+        let width = UIScreen.main.bounds.size.width - 24 * 2
+        layoutAttributes.bounds.size.width = width
+        layoutAttributes.bounds.size.height = systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
+        return layoutAttributes
     }
     
     func configure(with model: Model) {
@@ -167,19 +170,35 @@ private extension MainCollectionViewCell {
         }
         
         horizontalTopStackView.snp.makeConstraints { make in
-            make.edges.equalToSuperview().inset(UIEdgeInsets.init(top: 6, left: 6, bottom: 5, right: 6))
+            make.edges.equalToSuperview()
+                .inset(UIEdgeInsets.init(top: 6, left: 6, bottom: 5, right: 6))
         }
         
         horizontalCenterStackView.snp.makeConstraints { make in
-            make.edges.equalToSuperview().inset(UIEdgeInsets.init(top: 5, left: 6, bottom: 6, right: 6))
+            make.edges.equalToSuperview()
+                .inset(UIEdgeInsets.init(top: 5, left: 6, bottom: 6, right: 6))
         }
         
-        numberOfPairLabel.setContentHuggingPriority(.defaultHigh, for: .horizontal)
-        numberOfPairLabel.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
+        numberOfPairLabel.setContentHuggingPriority(.required, for: .horizontal)
+        numberOfPairLabel.setContentCompressionResistancePriority(.required, for: .horizontal)
+        numberOfPairLabel.setContentHuggingPriority(.required, for: .vertical)
+        
         teacherLabel.setContentHuggingPriority(.defaultLow, for: .horizontal)
+        teacherLabel.setContentCompressionResistancePriority(.required, for: .horizontal)
+        teacherLabel.setContentHuggingPriority(.required, for: .vertical)
+        
         typeOfPairLabel.setContentHuggingPriority(.required, for: .horizontal)
+        typeOfPairLabel.setContentCompressionResistancePriority(.required, for: .horizontal)
+        typeOfPairLabel.setContentHuggingPriority(.required, for: .vertical)
+        
         timeLabel.setContentHuggingPriority(.required, for: .horizontal)
+        timeLabel.setContentCompressionResistancePriority(.required, for: .horizontal)
+        timeLabel.setContentCompressionResistancePriority(.required, for: .vertical)
+        
         pairNameLabel.setContentHuggingPriority(.defaultLow, for: .horizontal)
+        pairNameLabel.setContentCompressionResistancePriority(.required, for: .vertical)
+        
         cabinaLabel.setContentHuggingPriority(.required, for: .horizontal)
+        cabinaLabel.setContentCompressionResistancePriority(.required, for: .horizontal)
     }
 }

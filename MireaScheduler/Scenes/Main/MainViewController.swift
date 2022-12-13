@@ -2,6 +2,7 @@
 
 import RxCocoa
 import RxSwift
+import RxAppState
 import UIKit
 
 final class MainViewController: UIViewController {
@@ -26,16 +27,19 @@ final class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bindViewModel()
-        setupBindings()
     }
 }
 
 private extension MainViewController {
     func bindViewModel() {
         let output = viewModel.transform(
-            input: .init()
+            input: .init(
+                viewWillAppear: rx.viewWillAppear.mapToVoid().asSignal(onErrorJustReturn: ())
+            )
         )
+        
+        output.items
+            .drive(customView.rx.items)
+            .disposed(by: bag)
     }
-    
-    func setupBindings() {}
 }
