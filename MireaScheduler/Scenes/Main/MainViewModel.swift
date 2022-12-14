@@ -3,6 +3,8 @@
 import RxCocoa
 import RxDataSources
 import RxSwift
+import AppRouter
+import UIKit
 
 final class MainViewModel {
     private let bag = DisposeBag()
@@ -13,14 +15,14 @@ final class MainViewModel {
     }
     
     func transform(input: Input) -> Output {
-        
-        let dataCurrent = input.viewWillAppear
+        let dataCurrent = input.alertResult
+            .compactMap { $0 }
             .asObservable()
-            .flatMapLatest { [groupService] _ in
-                groupService.fetch("ККСО-04-22")
+            .flatMapLatest { [groupService] group in
+                groupService.fetch(group)
             }
             .compactMap { $0.first }
-            .asObservable()
+            .share()
         
         let title = dataCurrent
             .compactMap { $0.groupName }
@@ -80,6 +82,7 @@ final class MainViewModel {
 extension MainViewModel {
     struct Input {
         let viewWillAppear: Signal<Void>
+        let alertResult: Signal<String?>
     }
 
     struct Output {

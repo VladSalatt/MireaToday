@@ -30,6 +30,8 @@
 		EAD5599A294918B0004A0A05 /* MainCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD55999294918B0004A0A05 /* MainCollectionHeaderView.swift */; };
 		EAD5599C29491B63004A0A05 /* UICollection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5599B29491B63004A0A05 /* UICollection+Ext.swift */; };
 		EAD5599E294921C6004A0A05 /* GenericCollectoinReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5599D294921C6004A0A05 /* GenericCollectoinReusableCell.swift */; };
+		EAD559A02949E908004A0A05 /* UIAlertViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5599F2949E908004A0A05 /* UIAlertViewController+Ext.swift */; };
+		EAD559A22949EA44004A0A05 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD559A12949EA44004A0A05 /* AlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		EAD55999294918B0004A0A05 /* MainCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionHeaderView.swift; sourceTree = "<group>"; };
 		EAD5599B29491B63004A0A05 /* UICollection+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollection+Ext.swift"; sourceTree = "<group>"; };
 		EAD5599D294921C6004A0A05 /* GenericCollectoinReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCollectoinReusableCell.swift; sourceTree = "<group>"; };
+		EAD5599F2949E908004A0A05 /* UIAlertViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertViewController+Ext.swift"; sourceTree = "<group>"; };
+		EAD559A12949EA44004A0A05 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,8 @@
 				EA323E732948F8B90076F995 /* UIStackView+Ext.swift */,
 				EAD5599B29491B63004A0A05 /* UICollection+Ext.swift */,
 				EAD5599D294921C6004A0A05 /* GenericCollectoinReusableCell.swift */,
+				EAD5599F2949E908004A0A05 /* UIAlertViewController+Ext.swift */,
+				EAD559A12949EA44004A0A05 /* AlertView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -340,6 +346,7 @@
 			files = (
 				EA5B39C429460CFD0045E352 /* Strings+Generated.swift in Sources */,
 				EA5B39B6294609C80045E352 /* Rx+Ext.swift in Sources */,
+				EAD559A22949EA44004A0A05 /* AlertView.swift in Sources */,
 				EA5B39BA29460A810045E352 /* UILabel+Ext.swift in Sources */,
 				EA5B39C529460CFD0045E352 /* Assets+Generated.swift in Sources */,
 				EA323E722948F7D70076F995 /* UIView+Ext.swift in Sources */,
@@ -349,6 +356,7 @@
 				EA323E702948B8000076F995 /* MainCollectionViewCell.swift in Sources */,
 				EAD5599E294921C6004A0A05 /* GenericCollectoinReusableCell.swift in Sources */,
 				EAD5599C29491B63004A0A05 /* UICollection+Ext.swift in Sources */,
+				EAD559A02949E908004A0A05 /* UIAlertViewController+Ext.swift in Sources */,
 				EA7397F72944BE16007AF5B9 /* MainView.swift in Sources */,
 				EA7397F52944BE16007AF5B9 /* AppRouter+Main.swift in Sources */,
 				EA5ED51229475407009E1EA5 /* GroupService.swift in Sources */,

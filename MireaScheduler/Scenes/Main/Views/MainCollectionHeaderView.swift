@@ -30,7 +30,6 @@ final class MainCollectionHeaderView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        backgroundColor = .gray
         addSubviews(
             contentView.addSubviews(
                 dayLabel,
@@ -62,7 +61,7 @@ private extension MainCollectionHeaderView {
     func makeConstraints() {
         contentView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
-                .inset(UIEdgeInsets(top: 6, left: 6, bottom: 6, right: 6))
+                .inset(UIEdgeInsets(top: 24, left: 24, bottom: 24, right: 24))
         }
         
         dayLabel.snp.makeConstraints { make in

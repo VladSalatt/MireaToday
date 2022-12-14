@@ -4,11 +4,13 @@ import RxCocoa
 import RxSwift
 import RxAppState
 import UIKit
+import AppRouter
 
 final class MainViewController: UIViewController {
     private let customView = MainView()
-    private let viewModel: MainViewModel
+    let viewModel: MainViewModel
     private let bag = DisposeBag()
+    private let alertResult = PublishRelay<String?>()
 
     init(viewModel: MainViewModel) {
         self.viewModel = viewModel
@@ -32,9 +34,20 @@ final class MainViewController: UIViewController {
 
 private extension MainViewController {
     func bindViewModel() {
+        rx.viewDidAppear
+            .mapToVoid()
+            .flatMapLatest { _ in
+                AppRouter.openInputGroup(vc: self)
+            }
+            .subscribe(onNext: { [alertResult] group in
+                alertResult.accept(group)
+            })
+            .disposed(by: bag)
+        
         let output = viewModel.transform(
             input: .init(
-                viewWillAppear: rx.viewWillAppear.mapToVoid().asSignal(onErrorJustReturn: ())
+                viewWillAppear: rx.viewWillAppear.mapToVoid().asSignal(onErrorJustReturn: ()),
+                alertResult: alertResult.asSignal()
             )
         )
         
