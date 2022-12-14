@@ -30,13 +30,14 @@ final class MainCollectionViewCell: UICollectionViewCell {
     
     private lazy var horizontalTopInsetedView: UIView = {
         let view = UIView()
-        view.backgroundColor = .systemGray
+        view.backgroundColor = .headerCellBAck
         return view
     }()
     
     private lazy var numberOfPairLabel: UILabel = {
         let label = UILabel()
         label.font = .italicSystemFont(ofSize: 14)
+        label.textColor = .mainBack
         return label
     }()
     
@@ -44,6 +45,7 @@ final class MainCollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.font = .italicSystemFont(ofSize: 14)
         label.textAlignment = .center
+        label.textColor = .mainBack
         return label
     }()
     
@@ -51,6 +53,7 @@ final class MainCollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.font = .italicSystemFont(ofSize: 14)
         label.textAlignment = .right
+        label.textColor = .mainBack
         return label
     }()
     
@@ -58,7 +61,7 @@ final class MainCollectionViewCell: UICollectionViewCell {
     
     private lazy var horizontalCenterInsetedView: UIView = {
         let view = UIView()
-        view.backgroundColor = .green
+        view.backgroundColor = .cellBack
         return view
     }()
     
@@ -72,6 +75,7 @@ final class MainCollectionViewCell: UICollectionViewCell {
     private lazy var timeLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 16)
+        label.textColor = .mainBack
         label.textAlignment = .left
         label.numberOfLines = 0
         return label
@@ -80,6 +84,7 @@ final class MainCollectionViewCell: UICollectionViewCell {
     private lazy var pairNameLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 16)
+        label.textColor = .mainBack
         label.textAlignment = .center
         label.numberOfLines = 0
         return label
@@ -88,6 +93,7 @@ final class MainCollectionViewCell: UICollectionViewCell {
     private lazy var cabinaLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 16)
+        label.textColor = .mainBack
         label.textAlignment = .right
         label.numberOfLines = 0
         return label

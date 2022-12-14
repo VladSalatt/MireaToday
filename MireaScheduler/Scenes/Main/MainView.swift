@@ -75,9 +75,10 @@ final class MainView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        backgroundColor = .white
+        backgroundColor = .mainBack
         addSubview(collectionView)
         collectionView.delegate = self
+        collectionView.backgroundColor = .mainBack
         
         makeConstraints()
         setupBindings()
