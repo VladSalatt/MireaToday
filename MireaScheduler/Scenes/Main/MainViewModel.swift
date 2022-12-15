@@ -15,14 +15,25 @@ final class MainViewModel {
     }
     
     func transform(input: Input) -> Output {
-        let dataCurrent = input.alertResult
+        let refreshTrigger = PublishRelay<Void>()
+        
+        let data = input.alertResult
             .compactMap { $0 }
             .asObservable()
             .flatMapLatest { [groupService] group in
                 groupService.fetch(group)
             }
-            .compactMap { $0.first }
             .share()
+        
+        let dataCurrent = data
+            .filter { !$0.isEmpty }
+            .compactMap { $0.first }
+        
+        data
+            .filter { $0.isEmpty }
+            .mapToVoid()
+            .bind(to: refreshTrigger)
+            .disposed(by: bag)
         
         let title = dataCurrent
             .compactMap { $0.groupName }
@@ -74,7 +85,8 @@ final class MainViewModel {
             .asDriver(onErrorJustReturn: [])
 
         return .init(
-            items: sections
+            items: sections,
+            refreshTrigger: refreshTrigger.asDriver(onErrorJustReturn: ())
         )
     }
 }
@@ -87,6 +99,7 @@ extension MainViewModel {
 
     struct Output {
         let items: Driver<[SectionModel<(String, String), MainCollectionViewCell.Model>]>
+        let refreshTrigger: Driver<Void>
     }
 }
             

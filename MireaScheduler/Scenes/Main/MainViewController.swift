@@ -34,8 +34,9 @@ final class MainViewController: UIViewController {
 
 private extension MainViewController {
     func bindViewModel() {
-        rx.viewDidAppear
-            .mapToVoid()
+        let refreshTrigger = PublishRelay<Void>()
+        
+        Observable.merge(rx.viewDidAppear.mapToVoid(), refreshTrigger.asObservable())
             .flatMapLatest { _ in
                 AppRouter.openInputGroup(vc: self)
             }
@@ -53,6 +54,12 @@ private extension MainViewController {
         
         output.items
             .drive(customView.rx.items)
+            .disposed(by: bag)
+        
+        output.refreshTrigger
+            .drive(onNext: { value in
+                refreshTrigger.accept(value)
+            })
             .disposed(by: bag)
     }
 }
